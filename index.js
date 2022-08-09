@@ -1,8 +1,7 @@
 const express = require("express");
-const mysql = require("mysql");
 
 //import route
-const indexRoute= require('./routes/index')
+const indexRoute= require('./src/routes/index')
 
 const app= express();
 
@@ -18,15 +17,6 @@ app.set("view engine","ejs");
 //access static file
 app.use(express.static("public"));
 
+app.use(express.json())
 // access routes config
 app.use('/',indexRoute)
-
-//database config
-const conn = mysql.createConnection({
-    host:"localhost",
-    port:"3306",
-    user: "root",
-    password:"",
-    database: "",
-    multipleStatements: true
-});
