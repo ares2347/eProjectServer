@@ -5,7 +5,7 @@ const conn = mysql.createConnection({
     port:"3307",
     user: "root",
     password:"",
-    database: "eProject",
+    database: "eproject",
     multipleStatements: true
 });
 

@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const productCtrl = require('../api/productCtrl')
+const categoryCtrl = require('../api/categoryCtrl')
 
 
 //config route
-router.get('/get', productCtrl.getProduct)
+router.get('/get', categoryCtrl.getCategory)
 
 module.exports = router

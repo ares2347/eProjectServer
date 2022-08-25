@@ -3,6 +3,7 @@ const cors = require('cors')
 //import route
 const userRoute= require('./src/routes/user')
 const productRoute = require('./src/routes/product')
+const categoryRoute = require('./src/routes/category')
 
 const app= express();
 
@@ -22,5 +23,6 @@ app.use(express.static("public"));
 app.use(express.json())
 
 // access routes config
-app.use('/user',userRoute)
-app.use('/product',productRoute)
+app.use('/users',userRoute)
+app.use('/products',productRoute)
+app.use('/categories', categoryRoute)
