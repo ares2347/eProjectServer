@@ -11,5 +11,4 @@ module.exports = {
             res.json(resData)
         })
     }
-    // search: (req, res)
 }
