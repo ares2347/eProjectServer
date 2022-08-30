@@ -9,6 +9,6 @@ module.exports = {
         return(`select * from products where brand like '${data.brand}' limit 5`)
     },
     productFeatured: (data) => {
-        return (`select * from reviews a inner join products b on a.pid = b.pid where category like '${data.category}' order by title desc limit 3`)
+        return (`select * from products where category like '${data.category}' limit 3`)
     }
 }
