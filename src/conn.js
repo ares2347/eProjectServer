@@ -1,11 +1,11 @@
 //database config
 const mysql = require("mysql");
 const conn = mysql.createConnection({
-    host:"localhost",
-    port:"3307",
-    user: "root",
-    password:"",
-    database: "eproject",
+    host:"db4free.net",
+    port:3306,
+    user: "hoangtu2347",
+    password:"23479034",
+    database: "eproject123",
     multipleStatements: true
 });
 
