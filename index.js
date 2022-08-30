@@ -10,7 +10,7 @@ const app= express();
 //allow cors
 app.use(cors())
 //port config
-const port = process.env.PORT | 8002;
+const port = process.env.PORT || 8002;
 
 //host
 app.listen(port);
